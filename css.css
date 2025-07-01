@@ -42,9 +42,12 @@ h1{
 
   img{
 
-    max-width:100%;
-    height: auto; 
-    display: block;
-    margin: 0 auto;
-     
+    
+       max-width: 100%;
+  max-height: 100vh; /* Limits height to viewport height */
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain; 
   }
