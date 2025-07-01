@@ -40,14 +40,21 @@ h1{
     -webkit-font-smoothing: antialiased;
   }
 
-  img{
+  
 
-    
-       max-width: 100%;
-  max-height: 100vh; /* Limits height to viewport height */
+
+
+
+img {
+  max-width: 100%;
+  max-height: 100vh;
   width: auto;
   height: auto;
   display: block;
-  margin: 0 auto;
-  object-fit: contain; 
-  }
+  margin: auto; /* Centers horizontally & vertically if in a flex/grid container */
+  position: absolute; /* Allows true centering */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Perfectly centers */
+  object-fit: contain;
+}
